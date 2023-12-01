@@ -3,6 +3,8 @@ Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
 
 Public Class Main_Form
+
+    REM this is a TEST
 #Region "Left Side Navbar Function"
 
     Dim masterFileMenu As String = "Close"
