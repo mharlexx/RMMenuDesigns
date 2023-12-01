@@ -4,7 +4,7 @@ Imports System.Windows.Forms
 
 Public Class Main_Form
 
-    REM this is a TEST
+    REM this is a TEST 2
 #Region "Left Side Navbar Function"
 
     Dim masterFileMenu As String = "Close"
