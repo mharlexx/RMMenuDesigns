@@ -25,16 +25,45 @@ Partial Class Main_Form
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main_Form))
         Me.PanelSidebar = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.SidebarTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.MasterfileMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.TransactionMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.QueriesMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.ReportsMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.CostingMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.UtilitiesMenuTransition = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button72 = New System.Windows.Forms.Button()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.BtnAbout = New System.Windows.Forms.Button()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.PanelUtilitiesMenu = New System.Windows.Forms.Panel()
+        Me.BtnUserFileMaintenance = New System.Windows.Forms.Button()
+        Me.BtnAccessFileMaintenance = New System.Windows.Forms.Button()
+        Me.BtnOwnershipOption = New System.Windows.Forms.Button()
+        Me.BtnTransactionMaintenance = New System.Windows.Forms.Button()
+        Me.BtnFileIntegrityCheck = New System.Windows.Forms.Button()
+        Me.BtnFileUtility = New System.Windows.Forms.Button()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.BtnUtilitiesMenu = New System.Windows.Forms.Button()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.PanelCostingMenu = New System.Windows.Forms.Panel()
+        Me.BtnGrossProfitAnalysis = New System.Windows.Forms.Button()
+        Me.BtnMaterialsQtyVariance = New System.Windows.Forms.Button()
+        Me.BtnCostComparisons = New System.Windows.Forms.Button()
+        Me.BtnManufacturingBatchRecs = New System.Windows.Forms.Button()
+        Me.BtnFinishingRecords = New System.Windows.Forms.Button()
+        Me.BtnStatementOfAccounts = New System.Windows.Forms.Button()
+        Me.BtnActualCost = New System.Windows.Forms.Button()
+        Me.BtnReplacementcost = New System.Windows.Forms.Button()
+        Me.BtnFRMBRReopeningEntry = New System.Windows.Forms.Button()
+        Me.BtnListOfCloseFRMBR = New System.Windows.Forms.Button()
+        Me.BtnVarianceYieldSummary = New System.Windows.Forms.Button()
+        Me.BtnCostVolumeAnalysis = New System.Windows.Forms.Button()
+        Me.BtnPurchasePriceVariance = New System.Windows.Forms.Button()
+        Me.BtnSummaryofProdNIsuues = New System.Windows.Forms.Button()
+        Me.BtnStandardCost = New System.Windows.Forms.Button()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.BtnCostingMenu = New System.Windows.Forms.Button()
+        Me.Panel14 = New System.Windows.Forms.Panel()
         Me.PanelReportsMenu = New System.Windows.Forms.Panel()
         Me.BtnLaborEfficiancyReport = New System.Windows.Forms.Button()
         Me.BtnSummaryOfOtherIssues = New System.Windows.Forms.Button()
@@ -94,46 +123,26 @@ Partial Class Main_Form
         Me.BtnMaterialClassFile = New System.Windows.Forms.Button()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.BtnMasterfileMenu = New System.Windows.Forms.Button()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button72 = New System.Windows.Forms.Button()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.BtnAbout = New System.Windows.Forms.Button()
-        Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.PanelUtilitiesMenu = New System.Windows.Forms.Panel()
-        Me.BtnUserFileMaintenance = New System.Windows.Forms.Button()
-        Me.BtnAccessFileMaintenance = New System.Windows.Forms.Button()
-        Me.BtnOwnershipOption = New System.Windows.Forms.Button()
-        Me.BtnTransactionMaintenance = New System.Windows.Forms.Button()
-        Me.BtnFileIntegrityCheck = New System.Windows.Forms.Button()
-        Me.BtnFileUtility = New System.Windows.Forms.Button()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.BtnUtilitiesMenu = New System.Windows.Forms.Button()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.PanelCostingMenu = New System.Windows.Forms.Panel()
-        Me.BtnGrossProfitAnalysis = New System.Windows.Forms.Button()
-        Me.BtnMaterialsQtyVariance = New System.Windows.Forms.Button()
-        Me.BtnCostComparisons = New System.Windows.Forms.Button()
-        Me.BtnManufacturingBatchRecs = New System.Windows.Forms.Button()
-        Me.BtnFinishingRecords = New System.Windows.Forms.Button()
-        Me.BtnStatementOfAccounts = New System.Windows.Forms.Button()
-        Me.BtnActualCost = New System.Windows.Forms.Button()
-        Me.BtnReplacementcost = New System.Windows.Forms.Button()
-        Me.BtnFRMBRReopeningEntry = New System.Windows.Forms.Button()
-        Me.BtnListOfCloseFRMBR = New System.Windows.Forms.Button()
-        Me.BtnVarianceYieldSummary = New System.Windows.Forms.Button()
-        Me.BtnCostVolumeAnalysis = New System.Windows.Forms.Button()
-        Me.BtnPurchasePriceVariance = New System.Windows.Forms.Button()
-        Me.BtnSummaryofProdNIsuues = New System.Windows.Forms.Button()
-        Me.BtnStandardCost = New System.Windows.Forms.Button()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.BtnCostingMenu = New System.Windows.Forms.Button()
-        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.SidebarTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.MasterfileMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.TransactionMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.QueriesMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.ReportsMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.CostingMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.UtilitiesMenuTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Lbl_employee_name = New System.Windows.Forms.Label()
+        Me.Lbl_trans_date = New System.Windows.Forms.Label()
+        Me.Transdate = New System.Windows.Forms.Timer(Me.components)
         Me.PanelSidebar.SuspendLayout()
+        Me.Panel17.SuspendLayout()
+        Me.Panel18.SuspendLayout()
+        Me.PanelUtilitiesMenu.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.PanelCostingMenu.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.PanelReportsMenu.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.PanelQueriesMenu.SuspendLayout()
@@ -142,12 +151,7 @@ Partial Class Main_Form
         Me.Panel10.SuspendLayout()
         Me.PanelMasterfileMenu.SuspendLayout()
         Me.Panel11.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.PanelUtilitiesMenu.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.PanelCostingMenu.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelSidebar
@@ -174,51 +178,578 @@ Partial Class Main_Form
         Me.PanelSidebar.MaximumSize = New System.Drawing.Size(250, 0)
         Me.PanelSidebar.MinimumSize = New System.Drawing.Size(80, 0)
         Me.PanelSidebar.Name = "PanelSidebar"
-        Me.PanelSidebar.Size = New System.Drawing.Size(250, 921)
+        Me.PanelSidebar.Size = New System.Drawing.Size(250, 898)
         Me.PanelSidebar.TabIndex = 2
         '
-        'Panel2
+        'Panel17
         '
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 10)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(250, 83)
-        Me.Panel2.TabIndex = 107
+        Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Panel17.Controls.Add(Me.Button8)
+        Me.Panel17.Controls.Add(Me.Button9)
+        Me.Panel17.Controls.Add(Me.Button10)
+        Me.Panel17.Controls.Add(Me.Button11)
+        Me.Panel17.Controls.Add(Me.Button12)
+        Me.Panel17.Controls.Add(Me.Button72)
+        Me.Panel17.Controls.Add(Me.Panel18)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel17.Location = New System.Drawing.Point(0, 588)
+        Me.Panel17.MaximumSize = New System.Drawing.Size(200, 260)
+        Me.Panel17.MinimumSize = New System.Drawing.Size(250, 70)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(250, 70)
+        Me.Panel17.TabIndex = 255
         '
-        'Panel1
+        'Button8
         '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(250, 10)
-        Me.Panel1.TabIndex = 0
+        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(0, 245)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(250, 35)
+        Me.Button8.TabIndex = 24
+        Me.Button8.Text = "Button8"
+        Me.Button8.UseVisualStyleBackColor = True
         '
-        'MasterfileMenuTransition
+        'Button9
         '
+        Me.Button9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Location = New System.Drawing.Point(0, 210)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(250, 35)
+        Me.Button9.TabIndex = 23
+        Me.Button9.Text = "Button9"
+        Me.Button9.UseVisualStyleBackColor = True
         '
-        'TransactionMenuTransition
+        'Button10
         '
+        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Location = New System.Drawing.Point(0, 175)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(250, 35)
+        Me.Button10.TabIndex = 22
+        Me.Button10.Text = "Button10"
+        Me.Button10.UseVisualStyleBackColor = True
         '
-        'QueriesMenuTransition
+        'Button11
         '
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Location = New System.Drawing.Point(0, 140)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(250, 35)
+        Me.Button11.TabIndex = 21
+        Me.Button11.Text = "Button11"
+        Me.Button11.UseVisualStyleBackColor = True
         '
-        'ReportsMenuTransition
+        'Button12
         '
+        Me.Button12.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Location = New System.Drawing.Point(0, 105)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(250, 35)
+        Me.Button12.TabIndex = 20
+        Me.Button12.Text = "Button12"
+        Me.Button12.UseVisualStyleBackColor = True
         '
-        'CostingMenuTransition
+        'Button72
         '
+        Me.Button72.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button72.FlatAppearance.BorderSize = 0
+        Me.Button72.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button72.Location = New System.Drawing.Point(0, 70)
+        Me.Button72.Name = "Button72"
+        Me.Button72.Size = New System.Drawing.Size(250, 35)
+        Me.Button72.TabIndex = 19
+        Me.Button72.Text = "Button72"
+        Me.Button72.UseVisualStyleBackColor = True
         '
-        'UtilitiesMenuTransition
+        'Panel18
         '
+        Me.Panel18.Controls.Add(Me.BtnAbout)
+        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel18.Location = New System.Drawing.Point(0, 0)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(250, 70)
+        Me.Panel18.TabIndex = 0
         '
-        'Panel9
+        'BtnAbout
         '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(250, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(662, 921)
-        Me.Panel9.TabIndex = 3
+        Me.BtnAbout.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.BtnAbout.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BtnAbout.FlatAppearance.BorderSize = 0
+        Me.BtnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAbout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAbout.Image = CType(resources.GetObject("BtnAbout.Image"), System.Drawing.Image)
+        Me.BtnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnAbout.Location = New System.Drawing.Point(-22, 0)
+        Me.BtnAbout.Name = "BtnAbout"
+        Me.BtnAbout.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnAbout.Size = New System.Drawing.Size(272, 70)
+        Me.BtnAbout.TabIndex = 1
+        Me.BtnAbout.Text = "                   About" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.BtnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnAbout.UseVisualStyleBackColor = False
+        '
+        'Panel19
+        '
+        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel19.Location = New System.Drawing.Point(0, 575)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(250, 13)
+        Me.Panel19.TabIndex = 254
+        '
+        'PanelUtilitiesMenu
+        '
+        Me.PanelUtilitiesMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnUserFileMaintenance)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnAccessFileMaintenance)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnOwnershipOption)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnTransactionMaintenance)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnFileIntegrityCheck)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnFileUtility)
+        Me.PanelUtilitiesMenu.Controls.Add(Me.Panel7)
+        Me.PanelUtilitiesMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelUtilitiesMenu.Location = New System.Drawing.Point(0, 505)
+        Me.PanelUtilitiesMenu.MaximumSize = New System.Drawing.Size(200, 280)
+        Me.PanelUtilitiesMenu.MinimumSize = New System.Drawing.Size(250, 70)
+        Me.PanelUtilitiesMenu.Name = "PanelUtilitiesMenu"
+        Me.PanelUtilitiesMenu.Size = New System.Drawing.Size(250, 70)
+        Me.PanelUtilitiesMenu.TabIndex = 253
+        '
+        'BtnUserFileMaintenance
+        '
+        Me.BtnUserFileMaintenance.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnUserFileMaintenance.FlatAppearance.BorderSize = 0
+        Me.BtnUserFileMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnUserFileMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnUserFileMaintenance.Location = New System.Drawing.Point(0, 245)
+        Me.BtnUserFileMaintenance.Name = "BtnUserFileMaintenance"
+        Me.BtnUserFileMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnUserFileMaintenance.Size = New System.Drawing.Size(250, 35)
+        Me.BtnUserFileMaintenance.TabIndex = 24
+        Me.BtnUserFileMaintenance.Text = "User File Maintenance"
+        Me.BtnUserFileMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnUserFileMaintenance.UseVisualStyleBackColor = True
+        '
+        'BtnAccessFileMaintenance
+        '
+        Me.BtnAccessFileMaintenance.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnAccessFileMaintenance.FlatAppearance.BorderSize = 0
+        Me.BtnAccessFileMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAccessFileMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAccessFileMaintenance.Location = New System.Drawing.Point(0, 210)
+        Me.BtnAccessFileMaintenance.Name = "BtnAccessFileMaintenance"
+        Me.BtnAccessFileMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnAccessFileMaintenance.Size = New System.Drawing.Size(250, 35)
+        Me.BtnAccessFileMaintenance.TabIndex = 23
+        Me.BtnAccessFileMaintenance.Text = "Access File Maintenance"
+        Me.BtnAccessFileMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnAccessFileMaintenance.UseVisualStyleBackColor = True
+        '
+        'BtnOwnershipOption
+        '
+        Me.BtnOwnershipOption.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnOwnershipOption.FlatAppearance.BorderSize = 0
+        Me.BtnOwnershipOption.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOwnershipOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOwnershipOption.Location = New System.Drawing.Point(0, 175)
+        Me.BtnOwnershipOption.Name = "BtnOwnershipOption"
+        Me.BtnOwnershipOption.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnOwnershipOption.Size = New System.Drawing.Size(250, 35)
+        Me.BtnOwnershipOption.TabIndex = 22
+        Me.BtnOwnershipOption.Text = "Ownership Option"
+        Me.BtnOwnershipOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnOwnershipOption.UseVisualStyleBackColor = True
+        '
+        'BtnTransactionMaintenance
+        '
+        Me.BtnTransactionMaintenance.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnTransactionMaintenance.FlatAppearance.BorderSize = 0
+        Me.BtnTransactionMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTransactionMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnTransactionMaintenance.Location = New System.Drawing.Point(0, 140)
+        Me.BtnTransactionMaintenance.Name = "BtnTransactionMaintenance"
+        Me.BtnTransactionMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnTransactionMaintenance.Size = New System.Drawing.Size(250, 35)
+        Me.BtnTransactionMaintenance.TabIndex = 21
+        Me.BtnTransactionMaintenance.Text = "Transaction Maintenance"
+        Me.BtnTransactionMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnTransactionMaintenance.UseVisualStyleBackColor = True
+        '
+        'BtnFileIntegrityCheck
+        '
+        Me.BtnFileIntegrityCheck.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFileIntegrityCheck.FlatAppearance.BorderSize = 0
+        Me.BtnFileIntegrityCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFileIntegrityCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFileIntegrityCheck.Location = New System.Drawing.Point(0, 105)
+        Me.BtnFileIntegrityCheck.Name = "BtnFileIntegrityCheck"
+        Me.BtnFileIntegrityCheck.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnFileIntegrityCheck.Size = New System.Drawing.Size(250, 35)
+        Me.BtnFileIntegrityCheck.TabIndex = 20
+        Me.BtnFileIntegrityCheck.Text = "File Integrity Check"
+        Me.BtnFileIntegrityCheck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFileIntegrityCheck.UseVisualStyleBackColor = True
+        '
+        'BtnFileUtility
+        '
+        Me.BtnFileUtility.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFileUtility.FlatAppearance.BorderSize = 0
+        Me.BtnFileUtility.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFileUtility.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFileUtility.Location = New System.Drawing.Point(0, 70)
+        Me.BtnFileUtility.Name = "BtnFileUtility"
+        Me.BtnFileUtility.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnFileUtility.Size = New System.Drawing.Size(250, 35)
+        Me.BtnFileUtility.TabIndex = 19
+        Me.BtnFileUtility.Text = "File Utitlity"
+        Me.BtnFileUtility.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFileUtility.UseVisualStyleBackColor = True
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.BtnUtilitiesMenu)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel7.Location = New System.Drawing.Point(0, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(250, 70)
+        Me.Panel7.TabIndex = 0
+        '
+        'BtnUtilitiesMenu
+        '
+        Me.BtnUtilitiesMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.BtnUtilitiesMenu.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BtnUtilitiesMenu.FlatAppearance.BorderSize = 0
+        Me.BtnUtilitiesMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnUtilitiesMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnUtilitiesMenu.Image = CType(resources.GetObject("BtnUtilitiesMenu.Image"), System.Drawing.Image)
+        Me.BtnUtilitiesMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnUtilitiesMenu.Location = New System.Drawing.Point(-22, 0)
+        Me.BtnUtilitiesMenu.Name = "BtnUtilitiesMenu"
+        Me.BtnUtilitiesMenu.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnUtilitiesMenu.Size = New System.Drawing.Size(272, 70)
+        Me.BtnUtilitiesMenu.TabIndex = 1
+        Me.BtnUtilitiesMenu.Text = "                   Utilities"
+        Me.BtnUtilitiesMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnUtilitiesMenu.UseVisualStyleBackColor = False
+        '
+        'Panel16
+        '
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel16.Location = New System.Drawing.Point(0, 492)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(250, 13)
+        Me.Panel16.TabIndex = 252
+        '
+        'PanelCostingMenu
+        '
+        Me.PanelCostingMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.PanelCostingMenu.Controls.Add(Me.BtnGrossProfitAnalysis)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnMaterialsQtyVariance)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnCostComparisons)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnManufacturingBatchRecs)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnFinishingRecords)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnStatementOfAccounts)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnActualCost)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnReplacementcost)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnFRMBRReopeningEntry)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnListOfCloseFRMBR)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnVarianceYieldSummary)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnCostVolumeAnalysis)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnPurchasePriceVariance)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnSummaryofProdNIsuues)
+        Me.PanelCostingMenu.Controls.Add(Me.BtnStandardCost)
+        Me.PanelCostingMenu.Controls.Add(Me.Panel5)
+        Me.PanelCostingMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelCostingMenu.Location = New System.Drawing.Point(0, 422)
+        Me.PanelCostingMenu.MaximumSize = New System.Drawing.Size(200, 595)
+        Me.PanelCostingMenu.MinimumSize = New System.Drawing.Size(250, 70)
+        Me.PanelCostingMenu.Name = "PanelCostingMenu"
+        Me.PanelCostingMenu.Size = New System.Drawing.Size(250, 70)
+        Me.PanelCostingMenu.TabIndex = 251
+        '
+        'BtnGrossProfitAnalysis
+        '
+        Me.BtnGrossProfitAnalysis.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnGrossProfitAnalysis.FlatAppearance.BorderSize = 0
+        Me.BtnGrossProfitAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGrossProfitAnalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGrossProfitAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnGrossProfitAnalysis.Location = New System.Drawing.Point(0, 560)
+        Me.BtnGrossProfitAnalysis.Name = "BtnGrossProfitAnalysis"
+        Me.BtnGrossProfitAnalysis.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnGrossProfitAnalysis.Size = New System.Drawing.Size(250, 35)
+        Me.BtnGrossProfitAnalysis.TabIndex = 46
+        Me.BtnGrossProfitAnalysis.Text = "Gross Profit Analysis"
+        Me.BtnGrossProfitAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnGrossProfitAnalysis.UseVisualStyleBackColor = True
+        '
+        'BtnMaterialsQtyVariance
+        '
+        Me.BtnMaterialsQtyVariance.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnMaterialsQtyVariance.FlatAppearance.BorderSize = 0
+        Me.BtnMaterialsQtyVariance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMaterialsQtyVariance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMaterialsQtyVariance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMaterialsQtyVariance.Location = New System.Drawing.Point(0, 525)
+        Me.BtnMaterialsQtyVariance.Name = "BtnMaterialsQtyVariance"
+        Me.BtnMaterialsQtyVariance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnMaterialsQtyVariance.Size = New System.Drawing.Size(250, 35)
+        Me.BtnMaterialsQtyVariance.TabIndex = 45
+        Me.BtnMaterialsQtyVariance.Text = "Materials Quantity Variance"
+        Me.BtnMaterialsQtyVariance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMaterialsQtyVariance.UseVisualStyleBackColor = True
+        '
+        'BtnCostComparisons
+        '
+        Me.BtnCostComparisons.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCostComparisons.FlatAppearance.BorderSize = 0
+        Me.BtnCostComparisons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCostComparisons.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCostComparisons.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostComparisons.Location = New System.Drawing.Point(0, 490)
+        Me.BtnCostComparisons.Name = "BtnCostComparisons"
+        Me.BtnCostComparisons.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnCostComparisons.Size = New System.Drawing.Size(250, 35)
+        Me.BtnCostComparisons.TabIndex = 44
+        Me.BtnCostComparisons.Text = "Cost Comparisons"
+        Me.BtnCostComparisons.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostComparisons.UseVisualStyleBackColor = True
+        '
+        'BtnManufacturingBatchRecs
+        '
+        Me.BtnManufacturingBatchRecs.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnManufacturingBatchRecs.FlatAppearance.BorderSize = 0
+        Me.BtnManufacturingBatchRecs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnManufacturingBatchRecs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnManufacturingBatchRecs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnManufacturingBatchRecs.Location = New System.Drawing.Point(0, 455)
+        Me.BtnManufacturingBatchRecs.Name = "BtnManufacturingBatchRecs"
+        Me.BtnManufacturingBatchRecs.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnManufacturingBatchRecs.Size = New System.Drawing.Size(250, 35)
+        Me.BtnManufacturingBatchRecs.TabIndex = 43
+        Me.BtnManufacturingBatchRecs.Text = "Manufacturing Batch Records"
+        Me.BtnManufacturingBatchRecs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnManufacturingBatchRecs.UseVisualStyleBackColor = True
+        '
+        'BtnFinishingRecords
+        '
+        Me.BtnFinishingRecords.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFinishingRecords.FlatAppearance.BorderSize = 0
+        Me.BtnFinishingRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFinishingRecords.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFinishingRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFinishingRecords.Location = New System.Drawing.Point(0, 420)
+        Me.BtnFinishingRecords.Name = "BtnFinishingRecords"
+        Me.BtnFinishingRecords.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnFinishingRecords.Size = New System.Drawing.Size(250, 35)
+        Me.BtnFinishingRecords.TabIndex = 42
+        Me.BtnFinishingRecords.Text = "Finishing Records"
+        Me.BtnFinishingRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFinishingRecords.UseVisualStyleBackColor = True
+        '
+        'BtnStatementOfAccounts
+        '
+        Me.BtnStatementOfAccounts.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnStatementOfAccounts.FlatAppearance.BorderSize = 0
+        Me.BtnStatementOfAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnStatementOfAccounts.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnStatementOfAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnStatementOfAccounts.Location = New System.Drawing.Point(0, 385)
+        Me.BtnStatementOfAccounts.Name = "BtnStatementOfAccounts"
+        Me.BtnStatementOfAccounts.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnStatementOfAccounts.Size = New System.Drawing.Size(250, 35)
+        Me.BtnStatementOfAccounts.TabIndex = 41
+        Me.BtnStatementOfAccounts.Text = "Statement of Accounts"
+        Me.BtnStatementOfAccounts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnStatementOfAccounts.UseVisualStyleBackColor = True
+        '
+        'BtnActualCost
+        '
+        Me.BtnActualCost.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnActualCost.FlatAppearance.BorderSize = 0
+        Me.BtnActualCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnActualCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnActualCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActualCost.Location = New System.Drawing.Point(0, 350)
+        Me.BtnActualCost.Name = "BtnActualCost"
+        Me.BtnActualCost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnActualCost.Size = New System.Drawing.Size(250, 35)
+        Me.BtnActualCost.TabIndex = 40
+        Me.BtnActualCost.Text = "Actual Cost"
+        Me.BtnActualCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActualCost.UseVisualStyleBackColor = True
+        '
+        'BtnReplacementcost
+        '
+        Me.BtnReplacementcost.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReplacementcost.FlatAppearance.BorderSize = 0
+        Me.BtnReplacementcost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReplacementcost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReplacementcost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnReplacementcost.Location = New System.Drawing.Point(0, 315)
+        Me.BtnReplacementcost.Name = "BtnReplacementcost"
+        Me.BtnReplacementcost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnReplacementcost.Size = New System.Drawing.Size(250, 35)
+        Me.BtnReplacementcost.TabIndex = 39
+        Me.BtnReplacementcost.Text = "Replacement Cost"
+        Me.BtnReplacementcost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnReplacementcost.UseVisualStyleBackColor = True
+        '
+        'BtnFRMBRReopeningEntry
+        '
+        Me.BtnFRMBRReopeningEntry.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFRMBRReopeningEntry.FlatAppearance.BorderSize = 0
+        Me.BtnFRMBRReopeningEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFRMBRReopeningEntry.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFRMBRReopeningEntry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFRMBRReopeningEntry.Location = New System.Drawing.Point(0, 280)
+        Me.BtnFRMBRReopeningEntry.Name = "BtnFRMBRReopeningEntry"
+        Me.BtnFRMBRReopeningEntry.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnFRMBRReopeningEntry.Size = New System.Drawing.Size(250, 35)
+        Me.BtnFRMBRReopeningEntry.TabIndex = 38
+        Me.BtnFRMBRReopeningEntry.Text = "FR/MBR Re-opening Entry"
+        Me.BtnFRMBRReopeningEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFRMBRReopeningEntry.UseVisualStyleBackColor = True
+        '
+        'BtnListOfCloseFRMBR
+        '
+        Me.BtnListOfCloseFRMBR.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnListOfCloseFRMBR.FlatAppearance.BorderSize = 0
+        Me.BtnListOfCloseFRMBR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnListOfCloseFRMBR.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnListOfCloseFRMBR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnListOfCloseFRMBR.Location = New System.Drawing.Point(0, 245)
+        Me.BtnListOfCloseFRMBR.Name = "BtnListOfCloseFRMBR"
+        Me.BtnListOfCloseFRMBR.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnListOfCloseFRMBR.Size = New System.Drawing.Size(250, 35)
+        Me.BtnListOfCloseFRMBR.TabIndex = 30
+        Me.BtnListOfCloseFRMBR.Text = "List of Close FR/MBR"
+        Me.BtnListOfCloseFRMBR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnListOfCloseFRMBR.UseVisualStyleBackColor = True
+        '
+        'BtnVarianceYieldSummary
+        '
+        Me.BtnVarianceYieldSummary.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnVarianceYieldSummary.FlatAppearance.BorderSize = 0
+        Me.BtnVarianceYieldSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVarianceYieldSummary.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnVarianceYieldSummary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnVarianceYieldSummary.Location = New System.Drawing.Point(0, 210)
+        Me.BtnVarianceYieldSummary.Name = "BtnVarianceYieldSummary"
+        Me.BtnVarianceYieldSummary.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnVarianceYieldSummary.Size = New System.Drawing.Size(250, 35)
+        Me.BtnVarianceYieldSummary.TabIndex = 29
+        Me.BtnVarianceYieldSummary.Text = "Variance/Yield Summary"
+        Me.BtnVarianceYieldSummary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnVarianceYieldSummary.UseVisualStyleBackColor = True
+        '
+        'BtnCostVolumeAnalysis
+        '
+        Me.BtnCostVolumeAnalysis.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCostVolumeAnalysis.FlatAppearance.BorderSize = 0
+        Me.BtnCostVolumeAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCostVolumeAnalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCostVolumeAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostVolumeAnalysis.Location = New System.Drawing.Point(0, 175)
+        Me.BtnCostVolumeAnalysis.Name = "BtnCostVolumeAnalysis"
+        Me.BtnCostVolumeAnalysis.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnCostVolumeAnalysis.Size = New System.Drawing.Size(250, 35)
+        Me.BtnCostVolumeAnalysis.TabIndex = 28
+        Me.BtnCostVolumeAnalysis.Text = "Cost Volume Analysis"
+        Me.BtnCostVolumeAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostVolumeAnalysis.UseVisualStyleBackColor = True
+        '
+        'BtnPurchasePriceVariance
+        '
+        Me.BtnPurchasePriceVariance.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnPurchasePriceVariance.FlatAppearance.BorderSize = 0
+        Me.BtnPurchasePriceVariance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPurchasePriceVariance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPurchasePriceVariance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnPurchasePriceVariance.Location = New System.Drawing.Point(0, 140)
+        Me.BtnPurchasePriceVariance.Name = "BtnPurchasePriceVariance"
+        Me.BtnPurchasePriceVariance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnPurchasePriceVariance.Size = New System.Drawing.Size(250, 35)
+        Me.BtnPurchasePriceVariance.TabIndex = 16
+        Me.BtnPurchasePriceVariance.Text = "Purchase Price Variance"
+        Me.BtnPurchasePriceVariance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnPurchasePriceVariance.UseVisualStyleBackColor = True
+        '
+        'BtnSummaryofProdNIsuues
+        '
+        Me.BtnSummaryofProdNIsuues.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnSummaryofProdNIsuues.FlatAppearance.BorderSize = 0
+        Me.BtnSummaryofProdNIsuues.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSummaryofProdNIsuues.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSummaryofProdNIsuues.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnSummaryofProdNIsuues.Location = New System.Drawing.Point(0, 105)
+        Me.BtnSummaryofProdNIsuues.Name = "BtnSummaryofProdNIsuues"
+        Me.BtnSummaryofProdNIsuues.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnSummaryofProdNIsuues.Size = New System.Drawing.Size(250, 35)
+        Me.BtnSummaryofProdNIsuues.TabIndex = 14
+        Me.BtnSummaryofProdNIsuues.Text = "Summary of Production Issues"
+        Me.BtnSummaryofProdNIsuues.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnSummaryofProdNIsuues.UseVisualStyleBackColor = True
+        '
+        'BtnStandardCost
+        '
+        Me.BtnStandardCost.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnStandardCost.FlatAppearance.BorderSize = 0
+        Me.BtnStandardCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnStandardCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnStandardCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnStandardCost.Location = New System.Drawing.Point(0, 70)
+        Me.BtnStandardCost.Name = "BtnStandardCost"
+        Me.BtnStandardCost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.BtnStandardCost.Size = New System.Drawing.Size(250, 35)
+        Me.BtnStandardCost.TabIndex = 13
+        Me.BtnStandardCost.Text = "Standard Cost"
+        Me.BtnStandardCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnStandardCost.UseVisualStyleBackColor = True
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.BtnCostingMenu)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(250, 70)
+        Me.Panel5.TabIndex = 0
+        '
+        'BtnCostingMenu
+        '
+        Me.BtnCostingMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.BtnCostingMenu.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BtnCostingMenu.FlatAppearance.BorderSize = 0
+        Me.BtnCostingMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCostingMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCostingMenu.Image = CType(resources.GetObject("BtnCostingMenu.Image"), System.Drawing.Image)
+        Me.BtnCostingMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostingMenu.Location = New System.Drawing.Point(-22, 0)
+        Me.BtnCostingMenu.Name = "BtnCostingMenu"
+        Me.BtnCostingMenu.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnCostingMenu.Size = New System.Drawing.Size(272, 70)
+        Me.BtnCostingMenu.TabIndex = 80
+        Me.BtnCostingMenu.Text = "                   Costing"
+        Me.BtnCostingMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCostingMenu.UseVisualStyleBackColor = False
+        '
+        'Panel14
+        '
+        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel14.Location = New System.Drawing.Point(0, 412)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(250, 10)
+        Me.Panel14.TabIndex = 250
         '
         'PanelReportsMenu
         '
@@ -1118,575 +1649,72 @@ Partial Class Main_Form
         Me.BtnMasterfileMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnMasterfileMenu.UseVisualStyleBackColor = False
         '
-        'Panel17
+        'Panel2
         '
-        Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Panel17.Controls.Add(Me.Button8)
-        Me.Panel17.Controls.Add(Me.Button9)
-        Me.Panel17.Controls.Add(Me.Button10)
-        Me.Panel17.Controls.Add(Me.Button11)
-        Me.Panel17.Controls.Add(Me.Button12)
-        Me.Panel17.Controls.Add(Me.Button72)
-        Me.Panel17.Controls.Add(Me.Panel18)
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel17.Location = New System.Drawing.Point(0, 588)
-        Me.Panel17.MaximumSize = New System.Drawing.Size(200, 260)
-        Me.Panel17.MinimumSize = New System.Drawing.Size(250, 70)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(250, 70)
-        Me.Panel17.TabIndex = 255
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 10)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(250, 83)
+        Me.Panel2.TabIndex = 107
         '
-        'Button8
+        'Panel1
         '
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(0, 245)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(250, 35)
-        Me.Button8.TabIndex = 24
-        Me.Button8.Text = "Button8"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(250, 10)
+        Me.Panel1.TabIndex = 0
         '
-        'Button9
+        'MasterfileMenuTransition
         '
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Location = New System.Drawing.Point(0, 210)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(250, 35)
-        Me.Button9.TabIndex = 23
-        Me.Button9.Text = "Button9"
-        Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'TransactionMenuTransition
         '
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Location = New System.Drawing.Point(0, 175)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(250, 35)
-        Me.Button10.TabIndex = 22
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
         '
-        'Button11
+        'QueriesMenuTransition
         '
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Location = New System.Drawing.Point(0, 140)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(250, 35)
-        Me.Button11.TabIndex = 21
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = True
         '
-        'Button12
+        'ReportsMenuTransition
         '
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Location = New System.Drawing.Point(0, 105)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(250, 35)
-        Me.Button12.TabIndex = 20
-        Me.Button12.Text = "Button12"
-        Me.Button12.UseVisualStyleBackColor = True
         '
-        'Button72
+        'CostingMenuTransition
         '
-        Me.Button72.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button72.FlatAppearance.BorderSize = 0
-        Me.Button72.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button72.Location = New System.Drawing.Point(0, 70)
-        Me.Button72.Name = "Button72"
-        Me.Button72.Size = New System.Drawing.Size(250, 35)
-        Me.Button72.TabIndex = 19
-        Me.Button72.Text = "Button72"
-        Me.Button72.UseVisualStyleBackColor = True
         '
-        'Panel18
+        'UtilitiesMenuTransition
         '
-        Me.Panel18.Controls.Add(Me.BtnAbout)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel18.Location = New System.Drawing.Point(0, 0)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(250, 70)
-        Me.Panel18.TabIndex = 0
         '
-        'BtnAbout
+        'Panel6
         '
-        Me.BtnAbout.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.BtnAbout.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BtnAbout.FlatAppearance.BorderSize = 0
-        Me.BtnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAbout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAbout.Image = CType(resources.GetObject("BtnAbout.Image"), System.Drawing.Image)
-        Me.BtnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAbout.Location = New System.Drawing.Point(-22, 0)
-        Me.BtnAbout.Name = "BtnAbout"
-        Me.BtnAbout.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        Me.BtnAbout.Size = New System.Drawing.Size(272, 70)
-        Me.BtnAbout.TabIndex = 1
-        Me.BtnAbout.Text = "                   About" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.BtnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAbout.UseVisualStyleBackColor = False
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.Panel6.Controls.Add(Me.Lbl_employee_name)
+        Me.Panel6.Controls.Add(Me.Lbl_trans_date)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel6.Location = New System.Drawing.Point(0, 898)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(912, 23)
+        Me.Panel6.TabIndex = 3
         '
-        'Panel19
+        'Lbl_employee_name
         '
-        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel19.Location = New System.Drawing.Point(0, 575)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(250, 13)
-        Me.Panel19.TabIndex = 254
+        Me.Lbl_employee_name.AutoSize = True
+        Me.Lbl_employee_name.Location = New System.Drawing.Point(12, 7)
+        Me.Lbl_employee_name.Name = "Lbl_employee_name"
+        Me.Lbl_employee_name.Size = New System.Drawing.Size(55, 13)
+        Me.Lbl_employee_name.TabIndex = 5
+        Me.Lbl_employee_name.Text = "Username"
         '
-        'PanelUtilitiesMenu
+        'Lbl_trans_date
         '
-        Me.PanelUtilitiesMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnUserFileMaintenance)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnAccessFileMaintenance)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnOwnershipOption)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnTransactionMaintenance)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnFileIntegrityCheck)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.BtnFileUtility)
-        Me.PanelUtilitiesMenu.Controls.Add(Me.Panel7)
-        Me.PanelUtilitiesMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelUtilitiesMenu.Location = New System.Drawing.Point(0, 505)
-        Me.PanelUtilitiesMenu.MaximumSize = New System.Drawing.Size(200, 280)
-        Me.PanelUtilitiesMenu.MinimumSize = New System.Drawing.Size(250, 70)
-        Me.PanelUtilitiesMenu.Name = "PanelUtilitiesMenu"
-        Me.PanelUtilitiesMenu.Size = New System.Drawing.Size(250, 70)
-        Me.PanelUtilitiesMenu.TabIndex = 253
+        Me.Lbl_trans_date.AutoSize = True
+        Me.Lbl_trans_date.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Lbl_trans_date.Location = New System.Drawing.Point(856, 0)
+        Me.Lbl_trans_date.Name = "Lbl_trans_date"
+        Me.Lbl_trans_date.Size = New System.Drawing.Size(56, 13)
+        Me.Lbl_trans_date.TabIndex = 4
+        Me.Lbl_trans_date.Text = "Date Time"
         '
-        'BtnUserFileMaintenance
+        'Transdate
         '
-        Me.BtnUserFileMaintenance.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnUserFileMaintenance.FlatAppearance.BorderSize = 0
-        Me.BtnUserFileMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnUserFileMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUserFileMaintenance.Location = New System.Drawing.Point(0, 245)
-        Me.BtnUserFileMaintenance.Name = "BtnUserFileMaintenance"
-        Me.BtnUserFileMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnUserFileMaintenance.Size = New System.Drawing.Size(250, 35)
-        Me.BtnUserFileMaintenance.TabIndex = 24
-        Me.BtnUserFileMaintenance.Text = "User File Maintenance"
-        Me.BtnUserFileMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnUserFileMaintenance.UseVisualStyleBackColor = True
-        '
-        'BtnAccessFileMaintenance
-        '
-        Me.BtnAccessFileMaintenance.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnAccessFileMaintenance.FlatAppearance.BorderSize = 0
-        Me.BtnAccessFileMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAccessFileMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAccessFileMaintenance.Location = New System.Drawing.Point(0, 210)
-        Me.BtnAccessFileMaintenance.Name = "BtnAccessFileMaintenance"
-        Me.BtnAccessFileMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnAccessFileMaintenance.Size = New System.Drawing.Size(250, 35)
-        Me.BtnAccessFileMaintenance.TabIndex = 23
-        Me.BtnAccessFileMaintenance.Text = "Access File Maintenance"
-        Me.BtnAccessFileMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAccessFileMaintenance.UseVisualStyleBackColor = True
-        '
-        'BtnOwnershipOption
-        '
-        Me.BtnOwnershipOption.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnOwnershipOption.FlatAppearance.BorderSize = 0
-        Me.BtnOwnershipOption.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnOwnershipOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnOwnershipOption.Location = New System.Drawing.Point(0, 175)
-        Me.BtnOwnershipOption.Name = "BtnOwnershipOption"
-        Me.BtnOwnershipOption.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnOwnershipOption.Size = New System.Drawing.Size(250, 35)
-        Me.BtnOwnershipOption.TabIndex = 22
-        Me.BtnOwnershipOption.Text = "Ownership Option"
-        Me.BtnOwnershipOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnOwnershipOption.UseVisualStyleBackColor = True
-        '
-        'BtnTransactionMaintenance
-        '
-        Me.BtnTransactionMaintenance.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnTransactionMaintenance.FlatAppearance.BorderSize = 0
-        Me.BtnTransactionMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTransactionMaintenance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnTransactionMaintenance.Location = New System.Drawing.Point(0, 140)
-        Me.BtnTransactionMaintenance.Name = "BtnTransactionMaintenance"
-        Me.BtnTransactionMaintenance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnTransactionMaintenance.Size = New System.Drawing.Size(250, 35)
-        Me.BtnTransactionMaintenance.TabIndex = 21
-        Me.BtnTransactionMaintenance.Text = "Transaction Maintenance"
-        Me.BtnTransactionMaintenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnTransactionMaintenance.UseVisualStyleBackColor = True
-        '
-        'BtnFileIntegrityCheck
-        '
-        Me.BtnFileIntegrityCheck.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnFileIntegrityCheck.FlatAppearance.BorderSize = 0
-        Me.BtnFileIntegrityCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFileIntegrityCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFileIntegrityCheck.Location = New System.Drawing.Point(0, 105)
-        Me.BtnFileIntegrityCheck.Name = "BtnFileIntegrityCheck"
-        Me.BtnFileIntegrityCheck.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnFileIntegrityCheck.Size = New System.Drawing.Size(250, 35)
-        Me.BtnFileIntegrityCheck.TabIndex = 20
-        Me.BtnFileIntegrityCheck.Text = "File Integrity Check"
-        Me.BtnFileIntegrityCheck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFileIntegrityCheck.UseVisualStyleBackColor = True
-        '
-        'BtnFileUtility
-        '
-        Me.BtnFileUtility.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnFileUtility.FlatAppearance.BorderSize = 0
-        Me.BtnFileUtility.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFileUtility.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFileUtility.Location = New System.Drawing.Point(0, 70)
-        Me.BtnFileUtility.Name = "BtnFileUtility"
-        Me.BtnFileUtility.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnFileUtility.Size = New System.Drawing.Size(250, 35)
-        Me.BtnFileUtility.TabIndex = 19
-        Me.BtnFileUtility.Text = "File Utitlity"
-        Me.BtnFileUtility.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFileUtility.UseVisualStyleBackColor = True
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.BtnUtilitiesMenu)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(250, 70)
-        Me.Panel7.TabIndex = 0
-        '
-        'BtnUtilitiesMenu
-        '
-        Me.BtnUtilitiesMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.BtnUtilitiesMenu.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BtnUtilitiesMenu.FlatAppearance.BorderSize = 0
-        Me.BtnUtilitiesMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnUtilitiesMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUtilitiesMenu.Image = CType(resources.GetObject("BtnUtilitiesMenu.Image"), System.Drawing.Image)
-        Me.BtnUtilitiesMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnUtilitiesMenu.Location = New System.Drawing.Point(-22, 0)
-        Me.BtnUtilitiesMenu.Name = "BtnUtilitiesMenu"
-        Me.BtnUtilitiesMenu.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        Me.BtnUtilitiesMenu.Size = New System.Drawing.Size(272, 70)
-        Me.BtnUtilitiesMenu.TabIndex = 1
-        Me.BtnUtilitiesMenu.Text = "                   Utilities"
-        Me.BtnUtilitiesMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnUtilitiesMenu.UseVisualStyleBackColor = False
-        '
-        'Panel16
-        '
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel16.Location = New System.Drawing.Point(0, 492)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(250, 13)
-        Me.Panel16.TabIndex = 252
-        '
-        'PanelCostingMenu
-        '
-        Me.PanelCostingMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.PanelCostingMenu.Controls.Add(Me.BtnGrossProfitAnalysis)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnMaterialsQtyVariance)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnCostComparisons)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnManufacturingBatchRecs)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnFinishingRecords)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnStatementOfAccounts)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnActualCost)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnReplacementcost)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnFRMBRReopeningEntry)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnListOfCloseFRMBR)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnVarianceYieldSummary)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnCostVolumeAnalysis)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnPurchasePriceVariance)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnSummaryofProdNIsuues)
-        Me.PanelCostingMenu.Controls.Add(Me.BtnStandardCost)
-        Me.PanelCostingMenu.Controls.Add(Me.Panel5)
-        Me.PanelCostingMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelCostingMenu.Location = New System.Drawing.Point(0, 422)
-        Me.PanelCostingMenu.MaximumSize = New System.Drawing.Size(200, 595)
-        Me.PanelCostingMenu.MinimumSize = New System.Drawing.Size(250, 70)
-        Me.PanelCostingMenu.Name = "PanelCostingMenu"
-        Me.PanelCostingMenu.Size = New System.Drawing.Size(250, 70)
-        Me.PanelCostingMenu.TabIndex = 251
-        '
-        'BtnGrossProfitAnalysis
-        '
-        Me.BtnGrossProfitAnalysis.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnGrossProfitAnalysis.FlatAppearance.BorderSize = 0
-        Me.BtnGrossProfitAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGrossProfitAnalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGrossProfitAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnGrossProfitAnalysis.Location = New System.Drawing.Point(0, 560)
-        Me.BtnGrossProfitAnalysis.Name = "BtnGrossProfitAnalysis"
-        Me.BtnGrossProfitAnalysis.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnGrossProfitAnalysis.Size = New System.Drawing.Size(250, 35)
-        Me.BtnGrossProfitAnalysis.TabIndex = 46
-        Me.BtnGrossProfitAnalysis.Text = "Gross Profit Analysis"
-        Me.BtnGrossProfitAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnGrossProfitAnalysis.UseVisualStyleBackColor = True
-        '
-        'BtnMaterialsQtyVariance
-        '
-        Me.BtnMaterialsQtyVariance.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnMaterialsQtyVariance.FlatAppearance.BorderSize = 0
-        Me.BtnMaterialsQtyVariance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMaterialsQtyVariance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMaterialsQtyVariance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnMaterialsQtyVariance.Location = New System.Drawing.Point(0, 525)
-        Me.BtnMaterialsQtyVariance.Name = "BtnMaterialsQtyVariance"
-        Me.BtnMaterialsQtyVariance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnMaterialsQtyVariance.Size = New System.Drawing.Size(250, 35)
-        Me.BtnMaterialsQtyVariance.TabIndex = 45
-        Me.BtnMaterialsQtyVariance.Text = "Materials Quantity Variance"
-        Me.BtnMaterialsQtyVariance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnMaterialsQtyVariance.UseVisualStyleBackColor = True
-        '
-        'BtnCostComparisons
-        '
-        Me.BtnCostComparisons.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCostComparisons.FlatAppearance.BorderSize = 0
-        Me.BtnCostComparisons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCostComparisons.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCostComparisons.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostComparisons.Location = New System.Drawing.Point(0, 490)
-        Me.BtnCostComparisons.Name = "BtnCostComparisons"
-        Me.BtnCostComparisons.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnCostComparisons.Size = New System.Drawing.Size(250, 35)
-        Me.BtnCostComparisons.TabIndex = 44
-        Me.BtnCostComparisons.Text = "Cost Comparisons"
-        Me.BtnCostComparisons.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostComparisons.UseVisualStyleBackColor = True
-        '
-        'BtnManufacturingBatchRecs
-        '
-        Me.BtnManufacturingBatchRecs.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnManufacturingBatchRecs.FlatAppearance.BorderSize = 0
-        Me.BtnManufacturingBatchRecs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnManufacturingBatchRecs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnManufacturingBatchRecs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnManufacturingBatchRecs.Location = New System.Drawing.Point(0, 455)
-        Me.BtnManufacturingBatchRecs.Name = "BtnManufacturingBatchRecs"
-        Me.BtnManufacturingBatchRecs.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnManufacturingBatchRecs.Size = New System.Drawing.Size(250, 35)
-        Me.BtnManufacturingBatchRecs.TabIndex = 43
-        Me.BtnManufacturingBatchRecs.Text = "Manufacturing Batch Records"
-        Me.BtnManufacturingBatchRecs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnManufacturingBatchRecs.UseVisualStyleBackColor = True
-        '
-        'BtnFinishingRecords
-        '
-        Me.BtnFinishingRecords.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnFinishingRecords.FlatAppearance.BorderSize = 0
-        Me.BtnFinishingRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFinishingRecords.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFinishingRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFinishingRecords.Location = New System.Drawing.Point(0, 420)
-        Me.BtnFinishingRecords.Name = "BtnFinishingRecords"
-        Me.BtnFinishingRecords.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnFinishingRecords.Size = New System.Drawing.Size(250, 35)
-        Me.BtnFinishingRecords.TabIndex = 42
-        Me.BtnFinishingRecords.Text = "Finishing Records"
-        Me.BtnFinishingRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFinishingRecords.UseVisualStyleBackColor = True
-        '
-        'BtnStatementOfAccounts
-        '
-        Me.BtnStatementOfAccounts.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnStatementOfAccounts.FlatAppearance.BorderSize = 0
-        Me.BtnStatementOfAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnStatementOfAccounts.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnStatementOfAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnStatementOfAccounts.Location = New System.Drawing.Point(0, 385)
-        Me.BtnStatementOfAccounts.Name = "BtnStatementOfAccounts"
-        Me.BtnStatementOfAccounts.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnStatementOfAccounts.Size = New System.Drawing.Size(250, 35)
-        Me.BtnStatementOfAccounts.TabIndex = 41
-        Me.BtnStatementOfAccounts.Text = "Statement of Accounts"
-        Me.BtnStatementOfAccounts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnStatementOfAccounts.UseVisualStyleBackColor = True
-        '
-        'BtnActualCost
-        '
-        Me.BtnActualCost.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnActualCost.FlatAppearance.BorderSize = 0
-        Me.BtnActualCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnActualCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnActualCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnActualCost.Location = New System.Drawing.Point(0, 350)
-        Me.BtnActualCost.Name = "BtnActualCost"
-        Me.BtnActualCost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnActualCost.Size = New System.Drawing.Size(250, 35)
-        Me.BtnActualCost.TabIndex = 40
-        Me.BtnActualCost.Text = "Actual Cost"
-        Me.BtnActualCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnActualCost.UseVisualStyleBackColor = True
-        '
-        'BtnReplacementcost
-        '
-        Me.BtnReplacementcost.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnReplacementcost.FlatAppearance.BorderSize = 0
-        Me.BtnReplacementcost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnReplacementcost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReplacementcost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnReplacementcost.Location = New System.Drawing.Point(0, 315)
-        Me.BtnReplacementcost.Name = "BtnReplacementcost"
-        Me.BtnReplacementcost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnReplacementcost.Size = New System.Drawing.Size(250, 35)
-        Me.BtnReplacementcost.TabIndex = 39
-        Me.BtnReplacementcost.Text = "Replacement Cost"
-        Me.BtnReplacementcost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnReplacementcost.UseVisualStyleBackColor = True
-        '
-        'BtnFRMBRReopeningEntry
-        '
-        Me.BtnFRMBRReopeningEntry.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnFRMBRReopeningEntry.FlatAppearance.BorderSize = 0
-        Me.BtnFRMBRReopeningEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFRMBRReopeningEntry.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFRMBRReopeningEntry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFRMBRReopeningEntry.Location = New System.Drawing.Point(0, 280)
-        Me.BtnFRMBRReopeningEntry.Name = "BtnFRMBRReopeningEntry"
-        Me.BtnFRMBRReopeningEntry.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnFRMBRReopeningEntry.Size = New System.Drawing.Size(250, 35)
-        Me.BtnFRMBRReopeningEntry.TabIndex = 38
-        Me.BtnFRMBRReopeningEntry.Text = "FR/MBR Re-opening Entry"
-        Me.BtnFRMBRReopeningEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnFRMBRReopeningEntry.UseVisualStyleBackColor = True
-        '
-        'BtnListOfCloseFRMBR
-        '
-        Me.BtnListOfCloseFRMBR.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnListOfCloseFRMBR.FlatAppearance.BorderSize = 0
-        Me.BtnListOfCloseFRMBR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnListOfCloseFRMBR.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnListOfCloseFRMBR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnListOfCloseFRMBR.Location = New System.Drawing.Point(0, 245)
-        Me.BtnListOfCloseFRMBR.Name = "BtnListOfCloseFRMBR"
-        Me.BtnListOfCloseFRMBR.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnListOfCloseFRMBR.Size = New System.Drawing.Size(250, 35)
-        Me.BtnListOfCloseFRMBR.TabIndex = 30
-        Me.BtnListOfCloseFRMBR.Text = "List of Close FR/MBR"
-        Me.BtnListOfCloseFRMBR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnListOfCloseFRMBR.UseVisualStyleBackColor = True
-        '
-        'BtnVarianceYieldSummary
-        '
-        Me.BtnVarianceYieldSummary.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnVarianceYieldSummary.FlatAppearance.BorderSize = 0
-        Me.BtnVarianceYieldSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnVarianceYieldSummary.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnVarianceYieldSummary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnVarianceYieldSummary.Location = New System.Drawing.Point(0, 210)
-        Me.BtnVarianceYieldSummary.Name = "BtnVarianceYieldSummary"
-        Me.BtnVarianceYieldSummary.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnVarianceYieldSummary.Size = New System.Drawing.Size(250, 35)
-        Me.BtnVarianceYieldSummary.TabIndex = 29
-        Me.BtnVarianceYieldSummary.Text = "Variance/Yield Summary"
-        Me.BtnVarianceYieldSummary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnVarianceYieldSummary.UseVisualStyleBackColor = True
-        '
-        'BtnCostVolumeAnalysis
-        '
-        Me.BtnCostVolumeAnalysis.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCostVolumeAnalysis.FlatAppearance.BorderSize = 0
-        Me.BtnCostVolumeAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCostVolumeAnalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCostVolumeAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostVolumeAnalysis.Location = New System.Drawing.Point(0, 175)
-        Me.BtnCostVolumeAnalysis.Name = "BtnCostVolumeAnalysis"
-        Me.BtnCostVolumeAnalysis.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnCostVolumeAnalysis.Size = New System.Drawing.Size(250, 35)
-        Me.BtnCostVolumeAnalysis.TabIndex = 28
-        Me.BtnCostVolumeAnalysis.Text = "Cost Volume Analysis"
-        Me.BtnCostVolumeAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostVolumeAnalysis.UseVisualStyleBackColor = True
-        '
-        'BtnPurchasePriceVariance
-        '
-        Me.BtnPurchasePriceVariance.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnPurchasePriceVariance.FlatAppearance.BorderSize = 0
-        Me.BtnPurchasePriceVariance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnPurchasePriceVariance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPurchasePriceVariance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnPurchasePriceVariance.Location = New System.Drawing.Point(0, 140)
-        Me.BtnPurchasePriceVariance.Name = "BtnPurchasePriceVariance"
-        Me.BtnPurchasePriceVariance.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnPurchasePriceVariance.Size = New System.Drawing.Size(250, 35)
-        Me.BtnPurchasePriceVariance.TabIndex = 16
-        Me.BtnPurchasePriceVariance.Text = "Purchase Price Variance"
-        Me.BtnPurchasePriceVariance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnPurchasePriceVariance.UseVisualStyleBackColor = True
-        '
-        'BtnSummaryofProdNIsuues
-        '
-        Me.BtnSummaryofProdNIsuues.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnSummaryofProdNIsuues.FlatAppearance.BorderSize = 0
-        Me.BtnSummaryofProdNIsuues.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSummaryofProdNIsuues.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSummaryofProdNIsuues.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnSummaryofProdNIsuues.Location = New System.Drawing.Point(0, 105)
-        Me.BtnSummaryofProdNIsuues.Name = "BtnSummaryofProdNIsuues"
-        Me.BtnSummaryofProdNIsuues.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnSummaryofProdNIsuues.Size = New System.Drawing.Size(250, 35)
-        Me.BtnSummaryofProdNIsuues.TabIndex = 14
-        Me.BtnSummaryofProdNIsuues.Text = "Summary of Production Issues"
-        Me.BtnSummaryofProdNIsuues.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnSummaryofProdNIsuues.UseVisualStyleBackColor = True
-        '
-        'BtnStandardCost
-        '
-        Me.BtnStandardCost.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnStandardCost.FlatAppearance.BorderSize = 0
-        Me.BtnStandardCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnStandardCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnStandardCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnStandardCost.Location = New System.Drawing.Point(0, 70)
-        Me.BtnStandardCost.Name = "BtnStandardCost"
-        Me.BtnStandardCost.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
-        Me.BtnStandardCost.Size = New System.Drawing.Size(250, 35)
-        Me.BtnStandardCost.TabIndex = 13
-        Me.BtnStandardCost.Text = "Standard Cost"
-        Me.BtnStandardCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnStandardCost.UseVisualStyleBackColor = True
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.BtnCostingMenu)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(250, 70)
-        Me.Panel5.TabIndex = 0
-        '
-        'BtnCostingMenu
-        '
-        Me.BtnCostingMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.BtnCostingMenu.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BtnCostingMenu.FlatAppearance.BorderSize = 0
-        Me.BtnCostingMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCostingMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCostingMenu.Image = CType(resources.GetObject("BtnCostingMenu.Image"), System.Drawing.Image)
-        Me.BtnCostingMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostingMenu.Location = New System.Drawing.Point(-22, 0)
-        Me.BtnCostingMenu.Name = "BtnCostingMenu"
-        Me.BtnCostingMenu.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        Me.BtnCostingMenu.Size = New System.Drawing.Size(272, 70)
-        Me.BtnCostingMenu.TabIndex = 80
-        Me.BtnCostingMenu.Text = "                   Costing"
-        Me.BtnCostingMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCostingMenu.UseVisualStyleBackColor = False
-        '
-        'Panel14
-        '
-        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel14.Location = New System.Drawing.Point(0, 412)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(250, 10)
-        Me.Panel14.TabIndex = 250
         '
         'Main_Form
         '
@@ -1694,8 +1722,8 @@ Partial Class Main_Form
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(912, 921)
-        Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.PanelSidebar)
+        Me.Controls.Add(Me.Panel6)
         Me.ForeColor = System.Drawing.Color.Gainsboro
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Main_Form"
@@ -1703,6 +1731,12 @@ Partial Class Main_Form
         Me.Text = "Supply Built Inventory Management System"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.PanelSidebar.ResumeLayout(False)
+        Me.Panel17.ResumeLayout(False)
+        Me.Panel18.ResumeLayout(False)
+        Me.PanelUtilitiesMenu.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        Me.PanelCostingMenu.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.PanelReportsMenu.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.PanelQueriesMenu.ResumeLayout(False)
@@ -1711,12 +1745,8 @@ Partial Class Main_Form
         Me.Panel10.ResumeLayout(False)
         Me.PanelMasterfileMenu.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel18.ResumeLayout(False)
-        Me.PanelUtilitiesMenu.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.PanelCostingMenu.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1731,7 +1761,6 @@ Partial Class Main_Form
     Friend WithEvents UtilitiesMenuTransition As Timer
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button
@@ -1830,4 +1859,8 @@ Partial Class Main_Form
     Friend WithEvents BtnMaterialClassFile As Button
     Friend WithEvents Panel11 As Panel
     Friend WithEvents BtnMasterfileMenu As Button
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Lbl_trans_date As Label
+    Friend WithEvents Transdate As Timer
+    Friend WithEvents Lbl_employee_name As Label
 End Class

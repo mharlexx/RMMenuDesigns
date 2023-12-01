@@ -80,6 +80,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Change_pw_form.Designer.vb">
+      <DependentUpon>Change_pw_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change_pw_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in_form.Designer.vb">
+      <DependentUpon>Log_in_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main_Form.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,6 +117,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Change_pw_form.resx">
+      <DependentUpon>Change_pw_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in_form.resx">
+      <DependentUpon>Log_in_form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.vb</DependentUpon>
     </EmbeddedResource>

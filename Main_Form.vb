@@ -16,6 +16,26 @@ Public Class Main_Form
     Private transitionStep As Integer = 200
 
 
+    REM ============================================ FORM LOAD SEQUENCE ==========================================================
+    Private Sub Main_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Log_in_form.Show()
+        Me.Enabled = False
+
+
+
+
+
+    End Sub
+    REM ============================================ FORM LOAD SEQUENCE ==========================================================
+
+
+    REM ============================================ TRANSACTION DATE AND TIME ==========================================================
+    Private Sub Transdate_Tick(sender As Object, e As EventArgs) Handles Transdate.Tick
+        Lbl_trans_date.Text = DateTime.Now.ToString()
+    End Sub
+
+    REM ============================================ TRANSACTION DATE AND TIME ==========================================================
+
     REM ============================================ TIMERS ==========================================================
     Private Sub MasterfileMenuTransition_Tick(sender As Object, e As EventArgs) Handles MasterfileMenuTransition.Tick
         If masterFileMenu = "Open" Then
@@ -267,6 +287,8 @@ Public Class Main_Form
             CostingMenuTransition.Start()
         End If
     End Sub
+
+
     REM ========================================= MENU BUTTONS =======================================================
 #End Region
 
