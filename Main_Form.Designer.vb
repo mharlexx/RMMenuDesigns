@@ -1604,7 +1604,7 @@ Partial Class Main_Form
         Me.BtnWarehouseFile.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
         Me.BtnWarehouseFile.Size = New System.Drawing.Size(250, 35)
         Me.BtnWarehouseFile.TabIndex = 20
-        Me.BtnWarehouseFile.Text = "Waterhouse File"
+        Me.BtnWarehouseFile.Text = "Warehouse File"
         Me.BtnWarehouseFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnWarehouseFile.UseVisualStyleBackColor = True
         '
