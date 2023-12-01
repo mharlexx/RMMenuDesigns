@@ -292,5 +292,30 @@ Public Class Main_Form
     REM ========================================= MENU BUTTONS =======================================================
 #End Region
 
+    Private Sub BtnMaterialClassFile_Click(sender As Object, e As EventArgs) Handles BtnMaterialClassFile.Click
+
+        With Material_class_form
+            .TopLevel = False
+            Panel9.Controls.Clear() 'clear panel view
+
+            'close all other open forms
+
+
+            'open Department form in panel
+            Panel9.Controls.Add(Material_class_form)
+
+            .BringToFront()
+            .Show()
+
+
+        End With
+
+
+
+
+    End Sub
+
+
+
 
 End Class

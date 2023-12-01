@@ -44,7 +44,7 @@ Public Class Change_pw_form
 
 
                     cmd.Parameters.AddWithValue("@password", Text_new_pw.Text)
-                    cmd.Parameters.AddWithValue("@date_modified", Date.Now)
+                    cmd.Parameters.AddWithValue("@date_modified", DateTime.Now.ToString("MM/dd/yyyy"))
 
                     cmd.ExecuteNonQuery()
 
@@ -54,6 +54,8 @@ Public Class Change_pw_form
                     Text_new_pw.Text = ""
                     Text_confirm_pw.Text = ""
                     Me.Close()
+                    Log_in_form.Enabled = True
+
 
                     connection.Close()
                 Catch ex As Exception
